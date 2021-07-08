@@ -1,0 +1,21 @@
+@model Hobby;
+<form asp-action="CreateHobbyForm" asp-controller="Home" class="shadow-lg p-3 my-2 rounded bg-white">
+    <h3 class="text-center text-muted">Create Hobby</h3>
+    
+    
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+      
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-outline-dark">Enter</button>
+</form>
+

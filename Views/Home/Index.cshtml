@@ -1,0 +1,15 @@
+﻿
+@{
+    User user = new User();
+    UserLogin userLogin = new UserLogin();
+
+}
+<div class="row d-flex justify-content-between">
+    <div class="col-md-5">
+          <partial name="_Register" model=@user />
+       
+    </div>
+    <div class="col-md-5">
+   <partial name="_Login" model="@userLogin"/>
+    </div>
+</div>
